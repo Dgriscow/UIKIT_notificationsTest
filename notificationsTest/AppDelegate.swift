@@ -6,14 +6,32 @@
 //
 
 import UIKit
+import UserNotifications
+
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    
+    let ncDelegate = NotificationDelegate()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            
+            if (error != nil){
+                print("error doing notifications", error?.localizedDescription)
+        }
+            
+            
+        }
+        
+    
+        UNUserNotificationCenter.current().delegate = ncDelegate
+        
+        
         return true
     }
 

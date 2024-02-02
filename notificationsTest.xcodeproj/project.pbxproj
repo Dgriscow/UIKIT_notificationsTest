@@ -13,6 +13,7 @@
 		23493CE52B6823A60073FBF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23493CE32B6823A60073FBF2 /* Main.storyboard */; };
 		23493CE72B6823A70073FBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23493CE62B6823A70073FBF2 /* Assets.xcassets */; };
 		23493CEA2B6823A70073FBF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23493CE82B6823A70073FBF2 /* LaunchScreen.storyboard */; };
+		23949B9F2B6984210026C8F0 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23949B9E2B6984210026C8F0 /* NotificationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		23493CE62B6823A70073FBF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23493CE92B6823A70073FBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23493CEB2B6823A70073FBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23493CF62B6965870073FBF2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		23493CF82B6965910073FBF2 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		23949B9E2B6984210026C8F0 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			children = (
 				23493CDC2B6823A60073FBF2 /* notificationsTest */,
 				23493CDB2B6823A60073FBF2 /* Products */,
+				23493CF52B6965870073FBF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +68,18 @@
 				23493CE62B6823A70073FBF2 /* Assets.xcassets */,
 				23493CE82B6823A70073FBF2 /* LaunchScreen.storyboard */,
 				23493CEB2B6823A70073FBF2 /* Info.plist */,
+				23949B9E2B6984210026C8F0 /* NotificationDelegate.swift */,
 			);
 			path = notificationsTest;
+			sourceTree = "<group>";
+		};
+		23493CF52B6965870073FBF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23493CF82B6965910073FBF2 /* UserNotificationsUI.framework */,
+				23493CF62B6965870073FBF2 /* UserNotifications.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 				23493CE22B6823A60073FBF2 /* ViewController.swift in Sources */,
 				23493CDE2B6823A60073FBF2 /* AppDelegate.swift in Sources */,
 				23493CE02B6823A60073FBF2 /* SceneDelegate.swift in Sources */,
+				23949B9F2B6984210026C8F0 /* NotificationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
